@@ -14,9 +14,10 @@ public class Task02 {
 
     public int[] countPositivesSumNegatives(int[] input) {
 
-        return input==null || input.length==0 ? new int[]{0}:
-                new int[]{(int)IntStream.of(input).filter(value -> value>0).count(),
-                         IntStream.of(input).filter(value -> value<0).sum()};
+     return input==null||input.length==0?new int[]{0}:new int[]{IntStream.of(input).filter(t->t>0).sum()
+     ,IntStream.of(input).filter(r->r<0).sum()};
 
     }
+
+
 }

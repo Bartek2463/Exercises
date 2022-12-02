@@ -16,11 +16,11 @@ public class Main {
         double asDouble = integers.stream()
                 .mapToDouble(Double::doubleValue)
                 .average().getAsDouble();
-        System.out.println(asDouble);
+       // System.out.println(asDouble);
 
 
         //  task02.countPassengers(list);
-        //task02.countPositivesSumNegatives( new  int[]{1,2,3,4,5,6,7,-5,-3,-8,-6,-2});
+        task02.countPositivesSumNegatives( new  int[]{1,2,-5,-3});
 
     }
 }
