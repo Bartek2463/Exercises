@@ -13,14 +13,18 @@ public class Task02 {
     }
 
     public int[] countPositivesSumNegatives(int[] input) {
-        if (input == null || input.length == 0) {
-            return new int[0];
-        } else {
-            int sum = Arrays.stream(input).filter(i -> i < 0).sum();
-            long count = Arrays.stream(input).filter(i -> i > 0).count();
-            System.out.println("sum : "+sum);
-            System.out.println("count : "+count);
-            return new int[]{(int)count,sum};
-        }
-            }
+
+     return input==null||input.length==0?new int[]{0}:new int[]{IntStream.of(input).filter(t->t>0).sum()
+     ,IntStream.of(input).filter(r->r<0).sum()};
+
+    }
+
+
+    public int Liters(double time)  {
+
+        double v = time * 0.5;
+        System.out.println(v);
+        return (int)v;
+
+    }
 }
