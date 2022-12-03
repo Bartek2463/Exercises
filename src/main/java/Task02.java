@@ -19,5 +19,11 @@ public class Task02 {
 
     }
 
+    public int Liters(double time)  {
 
+        double v = time * 0.5;
+        System.out.println(v);
+        return (int)v;
+
+    }
 }
